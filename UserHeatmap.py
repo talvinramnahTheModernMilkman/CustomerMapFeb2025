@@ -8,7 +8,7 @@ from streamlit_folium import folium_static
 st.set_page_config(layout="wide")
 
 def load_data():
-    file_path = "/Users/talvin.ramnah/Documents/TMM_waitlist-with-coordinates.csv"
+    file_path = "https://raw.githubusercontent.com/talvinramnahTheModernMilkman/CustomerMapFeb2025/refs/heads/main/CurrentUsersFeb2025.csv"
     df = pd.read_csv(file_path)
     return df[
         (df['LATITUDE'].between(49.8, 60.9)) & 
